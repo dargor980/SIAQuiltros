@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace SIAQuiltros
 {
-    public partial class Form1 : Form
+    public partial class InterfazPrincipal : Form
     {
-        public Form1()
+        public InterfazPrincipal()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form auth = new InterfazPrincipal();
-            button1.Text="Iniciando Sesión";
-            button1.Enabled = false;
-            auth.Show();
-
         }
     }
 }
