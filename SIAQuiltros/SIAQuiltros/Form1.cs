@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 using System.Data.SqlClient;
 
@@ -32,8 +33,18 @@ namespace SIAQuiltros
             SqlDataReader auth = comando.ExecuteReader();
             if (auth.Read())
             {
-                Form auth = new InterfazPrincipal();
-                auth.Show();
+                Form Inicio = new InterfazPrincipal(token);
+                Thread.Sleep(2000);
+                Inicio.Show();
+                button1.Enabled = true;
+                button1.Text = "Iniciar sesión";
+
+            }
+            else
+            {
+                MessageBox.Show("Usuario con contraseña errónea. Intente nuevamente.");
+                button1.Enabled = true;
+                button1.Text = "Iniciar sesión";
             }
 
         }

@@ -58,8 +58,9 @@
             // cerrarSesiónToolStripMenuItem
             // 
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar sesión";
+            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
             // sociosToolStripMenuItem
             // 
@@ -74,6 +75,7 @@
             this.consultarEstadoDeSocioToolStripMenuItem.Name = "consultarEstadoDeSocioToolStripMenuItem";
             this.consultarEstadoDeSocioToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.consultarEstadoDeSocioToolStripMenuItem.Text = "Consultar estado de socio";
+            this.consultarEstadoDeSocioToolStripMenuItem.Click += new System.EventHandler(this.consultarEstadoDeSocioToolStripMenuItem_Click);
             // 
             // InterfazPrincipal
             // 
@@ -84,7 +86,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "InterfazPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "InterfazPrincipal";
+            this.Text = "Quiltros- Plataforma de gestión integrada";
+            this.Load += new System.EventHandler(this.InterfazPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
