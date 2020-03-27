@@ -1,0 +1,125 @@
+Requisitos para la utilizacion de la DB:
+
+1.Tener instalado SQL server Management Studio
+2.Ejecutar el script
+
+Cómo enlazar base de datos a la solucion c#?
+
+usando  la libreria SqlClient, nos permitira establecer una conexion a SQLServer
+
+Clases clave de SqlClient
+
+SqlConnection: Esta clase nos permite instanciar una conexión con el servidor en donde queremos acceder a la base de datos
+
+ejemplo:
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     
+     SqlConnection  conexion= new SqlConnection("server=[Nnombre equipo o direccion DNS] ; database=[NOMBRE BASE] ; integrated security = true");
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+El string que le pasamos al constructor del SqlConnection le indicamos como primer dato el nombre de nuestro servidor, si
+se trabaja en localhost, lo puede ubicar cuando arranca el SQL Server Management Studio.
+
+SqlConnection: método open(): Nos permite abrir la conexión.
+
+ejemplo:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    SqlConnection  conexion= new SqlConnection("server=[Nnombre equipo o direccion DNS] ; database=[NOMBRE BASE] ; integrated security = true");
+    conexion.Open();
+    
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SqlCommand=  representa un procedimiento almacenado o una instrucción de Transact-SQL que se ejecuta en una base de datos de SQL Server.
+Su constructor recibe el string en donde almacenamos la consulta SQL y un dato de tipo SqlConnection.
+
+ejemplo:
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      SqlConnection  conexion= new SqlConnection("server=[Nnombre equipo o direccion DNS] ; database=[NOMBRE BASE] ; integrated security = true");
+      conexion.Open();
+      String query=[aqui va nuestro string con la consulta en SQL];
+      SqlCommand comando= new SqlCommand(query,conexion);
+      
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SqlDataReader y ExecuteReader:  DataReader crea una instancia del objeto Command y de un DataReader 
+a continuación, para lo cual se llama a Command.ExecuteReader a fin de recuperar filas de un origen de datos.
+
+ejemplo:
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      SqlConnection  conexion= new SqlConnection("server=[Nnombre equipo o direccion DNS] ; database=[NOMBRE BASE] ; integrated security = true");
+      conexion.Open();
+      String query="Select *from tabla";
+      SqlCommand comando= new SqlCommand(query,conexion);
+      SqlDataReader consulta= comando.ExecuteReader();
+      if(consulta.Read())
+      {
+        Console.WriteLine(consula["(nombre del campo a imprimir)"].ToString());
+      }
+      conexion.Close();
+      
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+command.ExecuteNonQuery(): Método de la clase SqlCommand que nos permite realizar INSERT en SQL.
+
+ejemplo:
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            SqlConnection  conexion= new SqlConnection("server=[Nnombre equipo o direccion DNS] ; database=[NOMBRE BASE] ; integrated security = true");
+            conexion.Open();
+            String query="insert into [NOMBRETABLA] (campo1,campo2,....,campon) values([dato1],[dato2],[dato3],..,[dato N])"
+            SqlCommand comando2 = new SqlCommand(query, conexion);
+            comando2.ExecuteNonQuery();
+            
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ejemplo de implementación C#:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System.Data.SqlClient; //procurar agregar el espacio de nombre para tener acceso a la libreria
+
+namespace example
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SqlConnection conexion= new SqlConnection("server=[nombre equipo o dirección DNS de servidor] ; database=[nombre de la base de datos] ; integrated security=True");
+            conexion.Open(); //abrimos la conexión al servidor
+
+            //ejemplo: consultar un registro de la base de datos
+            String datoCampo = "this is a example";
+            String query = "Select *from [NOMBREtabla] where [NOMBRECAMPO]='" + datoCampo + "'";
+            SqlCommand comando = new SqlCommand(query, conexion);
+            SqlDataReader consulta = comando.ExecuteReader(); // se ejecuta la consulta
+
+            if(consulta.Read())
+            {
+                Console.WriteLine(consulta["(Nombre del campo"].ToString());
+            }
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            
+          //ejemplo2 Insertar datos en una base de datos
+            conexion.Open();
+            String query2="insert into [NOMBRETABLA] (campo1,campo2,....,campon) values([dato1],[dato2],[dato3],..,[dato N])"
+            SqlCommand comando2 = new SqlCommand(query2, conexion);
+            comando2.ExecuteNonQuery();
+        }
+    }
+}
+
+se debe procurar escribir bien las consultas y vigilar bien las dependencias entre tablas, de lo contrario, la orden no se ejecutará.
