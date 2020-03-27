@@ -84,7 +84,8 @@ namespace SIAQuiltros
 
         private void mostrarListaDeSociosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form ListSocios = new ListadeSocios();
+            ListSocios.Show();
         }
     }
 }
