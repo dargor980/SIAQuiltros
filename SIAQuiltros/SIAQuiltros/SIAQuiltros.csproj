@@ -79,6 +79,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ingreso modo Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingreso modo Administrador.Designer.cs">
+      <DependentUpon>Ingreso modo Administrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="InterfazPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <Compile Include="SolicitarContraseña.Designer.cs">
       <DependentUpon>SolicitarContraseña.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Asignar hogar a mascota.resx">
+      <DependentUpon>Asignar hogar a mascota.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultar estado de socio.resx">
       <DependentUpon>Consultar estado de socio.cs</DependentUpon>
     </EmbeddedResource>

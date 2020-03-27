@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SIAQuiltros
 {
-    public partial class Asignar_hogar_a_mascota : Form
+    public partial class Ingreso_modo_Administrador : Form
     {
-        public Asignar_hogar_a_mascota()
+        public Ingreso_modo_Administrador()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -39,5 +39,16 @@ namespace SIAQuiltros
             Form consultaEstadoHogares = new Consultar_estado_hogares();
             consultaEstadoHogares.Show();
         }
+
+        private void asignarHogarAMascotaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form asignarHogar = new Asignar_hogar_a_mascota();
+            asignarHogar.Show();
+        }
+
+        private void voluntarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
