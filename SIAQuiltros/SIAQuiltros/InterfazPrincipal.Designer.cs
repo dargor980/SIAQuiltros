@@ -42,9 +42,9 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voluntarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.revisarEstadoVoluntariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarVoluntariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendarioDeActividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarVoluntariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,6 +159,13 @@
             this.revisarEstadoVoluntariosToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.revisarEstadoVoluntariosToolStripMenuItem.Text = "Revisar estado voluntarios";
             // 
+            // ingresarVoluntariosToolStripMenuItem
+            // 
+            this.ingresarVoluntariosToolStripMenuItem.Name = "ingresarVoluntariosToolStripMenuItem";
+            this.ingresarVoluntariosToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.ingresarVoluntariosToolStripMenuItem.Text = "Ingresar voluntarios";
+            this.ingresarVoluntariosToolStripMenuItem.Click += new System.EventHandler(this.ingresarVoluntariosToolStripMenuItem_Click);
+            // 
             // actividadesToolStripMenuItem
             // 
             this.actividadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -172,12 +179,6 @@
             this.calendarioDeActividadesToolStripMenuItem.Name = "calendarioDeActividadesToolStripMenuItem";
             this.calendarioDeActividadesToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.calendarioDeActividadesToolStripMenuItem.Text = "Calendario de actividades";
-            // 
-            // ingresarVoluntariosToolStripMenuItem
-            // 
-            this.ingresarVoluntariosToolStripMenuItem.Name = "ingresarVoluntariosToolStripMenuItem";
-            this.ingresarVoluntariosToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.ingresarVoluntariosToolStripMenuItem.Text = "Ingresar voluntarios";
             // 
             // InterfazPrincipal
             // 

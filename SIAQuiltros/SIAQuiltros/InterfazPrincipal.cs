@@ -50,5 +50,11 @@ namespace SIAQuiltros
         {
 
         }
+
+        private void ingresarVoluntariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ingresarVoluntario = new Ingresar_voluntario();
+            ingresarVoluntario.Show();
+        }
     }
 }
