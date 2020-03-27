@@ -8,23 +8,41 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+
 namespace SIAQuiltros
 {
     public partial class InterfazPrincipal : Form
     {
-        public InterfazPrincipal(string user_info)
+        Form1 LOGIN;
+       
+        public void WelcomeMessage(string token)
         {
+            SqlConnection conexion = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
+            conexion.Open();
+            SqlCommand comando = new SqlCommand(token, conexion);
+            SqlDataReader lectura = comando.ExecuteReader();
+            if(lectura.Read())
+            {
+                label2.Text = lectura["nombre"].ToString();
+            }
+        }
+       
+        public InterfazPrincipal(string user_info,Form1 principal)
+        {
+           
             String buffer = user_info;
             InitializeComponent();
+            Form1 p = principal;
+            LOGIN = p;
+            p.Hide();
+            WelcomeMessage(buffer);
         }
 
-        private void InterfazPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            LOGIN.Show();
             this.Close();
         }
 
@@ -55,6 +73,18 @@ namespace SIAQuiltros
         {
             Form ingresarVoluntario = new Ingresar_voluntario();
             ingresarVoluntario.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LOGIN.Close();
+            this.Close();
+            
+        }
+
+        private void mostrarListaDeSociosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

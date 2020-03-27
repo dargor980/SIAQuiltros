@@ -19,6 +19,11 @@ namespace SIAQuiltros
         {
             InitializeComponent();
         }
+        public void ResetBox()
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -33,18 +38,20 @@ namespace SIAQuiltros
             SqlDataReader auth = comando.ExecuteReader();
             if (auth.Read())
             {
-                Form Inicio = new InterfazPrincipal(token);
+                Form1 principal = this;
+                Form Inicio = new InterfazPrincipal(token,principal);
                 Thread.Sleep(2000);
                 Inicio.Show();
                 button1.Enabled = true;
                 button1.Text = "Iniciar sesión";
-
+                ResetBox();
             }
             else
             {
                 MessageBox.Show("Usuario con contraseña errónea. Intente nuevamente.");
                 button1.Enabled = true;
                 button1.Text = "Iniciar sesión";
+                ResetBox();
             }
 
         }
