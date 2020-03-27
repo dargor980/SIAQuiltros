@@ -33,5 +33,11 @@ namespace SIAQuiltros
             Form consulta_socio = new Consultar_estado_de_socio();
             consulta_socio.Show();
         }
+
+        private void consultarEstadoHogaresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form consultaEstadoHogares = new Consultar_estado_hogares();
+            consultaEstadoHogares.Show();
+        }
     }
 }
