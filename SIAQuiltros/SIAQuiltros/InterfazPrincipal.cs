@@ -87,5 +87,16 @@ namespace SIAQuiltros
             Form ListSocios = new ListadeSocios();
             ListSocios.Show();
         }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void acercaDeQuiltrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form AboutUs = new Acerca_de_Quiltros();
+            AboutUs.Show();
+        }
     }
 }
