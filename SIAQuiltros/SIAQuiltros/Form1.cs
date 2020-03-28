@@ -62,5 +62,10 @@ namespace SIAQuiltros
             Form RecoverPass = new SolicitarContraseña();
             RecoverPass.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -58,5 +58,13 @@ namespace SIAQuiltros
             }
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String mascota = comboBox2.Text;
+            String hogar = comboBox1.Text;
+            Form confirmacion = new Confirmar_hogartemporal(mascota,hogar);
+            confirmacion.Show();
+        }
     }
 }

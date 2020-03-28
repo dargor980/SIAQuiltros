@@ -98,5 +98,11 @@ namespace SIAQuiltros
             Form AboutUs = new Acerca_de_Quiltros();
             AboutUs.Show();
         }
+
+        private void modoAdministradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ADMIN = new Ingreso_modo_Administrador();
+            ADMIN.Show();
+        }
     }
 }
