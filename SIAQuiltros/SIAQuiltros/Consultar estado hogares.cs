@@ -27,7 +27,8 @@ namespace SIAQuiltros
         {
             SqlConnection conexion = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
             conexion.Open();
-            String query = "SELECT *FROM SOCIO s, HOGAR_TEMPORAL h, MASCOTA m WHERE s.rut=h.cod_socio";
+            String rut = textBox1.Text;
+            String query = "SELECT *FROM SOCIO s, HOGAR_TEMPORAL h, MASCOTA m WHERE s.rut=h.cod_socio AND s.rut='"+rut+"'";
             SqlCommand comando = new SqlCommand(query,conexion);
             SqlDataReader lectura = comando.ExecuteReader();
             if(lectura.Read())
@@ -42,6 +43,11 @@ namespace SIAQuiltros
             }
 
             
+        }
+
+        private void Consultar_estado_hogares_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

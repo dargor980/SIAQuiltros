@@ -94,6 +94,7 @@
             this.Name = "Consultar_estado_hogares";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de estado de Hogar Temporal";
+            this.Load += new System.EventHandler(this.Consultar_estado_hogares_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
