@@ -143,6 +143,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUILTROSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ResultadoConsultaHogarTemporal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultadoConsultaHogarTemporal.Designer.cs">
+      <DependentUpon>ResultadoConsultaHogarTemporal.cs</DependentUpon>
+    </Compile>
     <Compile Include="SolicitarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ResultadoConsultaHogarTemporal.resx">
+      <DependentUpon>ResultadoConsultaHogarTemporal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SolicitarContraseña.resx">
       <DependentUpon>SolicitarContraseña.cs</DependentUpon>
     </EmbeddedResource>
