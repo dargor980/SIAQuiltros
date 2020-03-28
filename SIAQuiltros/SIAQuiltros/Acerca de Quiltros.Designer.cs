@@ -127,6 +127,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Acerca_de_Quiltros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acerca_de_Quiltros";
             this.ResumeLayout(false);
             this.PerformLayout();
