@@ -23,7 +23,7 @@ namespace SIAQuiltros
             phone.Text = consulta["Telefono"].ToString();
             homeAddress.Text = consulta["direccion"].ToString();
             homeComuna.Text = consulta["comuna"].ToString();
-            if(consulta["cod_mascota"]!=null)
+            if(consulta["cod_mascota"].ToString()!="")
             {
                 IsPetAssociated.Text = "Si";
             }
