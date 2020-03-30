@@ -63,8 +63,16 @@ namespace SIAQuiltros
         {
             String mascota = comboBox2.Text;
             String hogar = comboBox1.Text;
-            Form confirmacion = new Confirmar_hogartemporal(mascota,hogar);
-            confirmacion.Show();
+            if(mascota!="" && hogar!="")
+            {
+                Form confirmacion = new Confirmar_hogartemporal(mascota, hogar);
+                confirmacion.Show();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, verifique que haya ingresado los datos.");
+            }
+            
         }
     }
 }

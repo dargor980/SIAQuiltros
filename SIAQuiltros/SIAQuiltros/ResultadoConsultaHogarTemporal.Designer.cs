@@ -261,7 +261,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ResultadoConsultaHogarTemporal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ResultadoConsultaHogarTemporal";
+            this.Text = "Resultado Consulta Hogar Temporal";
             this.Load += new System.EventHandler(this.ResultadoConsultaHogarTemporal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
