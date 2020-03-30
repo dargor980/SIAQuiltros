@@ -166,6 +166,7 @@
             this.mostrarListaDeVoluntariosToolStripMenuItem.Name = "mostrarListaDeVoluntariosToolStripMenuItem";
             this.mostrarListaDeVoluntariosToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
             this.mostrarListaDeVoluntariosToolStripMenuItem.Text = "Mostrar Lista de voluntarios";
+            this.mostrarListaDeVoluntariosToolStripMenuItem.Click += new System.EventHandler(this.mostrarListaDeVoluntariosToolStripMenuItem_Click);
             // 
             // ingresarVoluntariosToolStripMenuItem
             // 

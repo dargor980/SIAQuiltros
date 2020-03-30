@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sOCIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qUILTROSDataSet = new SIAQuiltros.QUILTROSDataSet();
+            this.sOCIOTableAdapter = new SIAQuiltros.QUILTROSDataSetTableAdapters.SOCIOTableAdapter();
             this.rutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cuentabancariaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bancoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sOCIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qUILTROSDataSet = new SIAQuiltros.QUILTROSDataSet();
-            this.sOCIOTableAdapter = new SIAQuiltros.QUILTROSDataSetTableAdapters.SOCIOTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sOCIOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUILTROSDataSet)).BeginInit();
@@ -47,7 +47,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(713, 415);
+            this.button1.Location = new System.Drawing.Point(460, 475);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -69,45 +69,9 @@
             this.dataGridView1.DataSource = this.sOCIOBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(643, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(993, 426);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // rutDataGridViewTextBoxColumn
-            // 
-            this.rutDataGridViewTextBoxColumn.DataPropertyName = "rut";
-            this.rutDataGridViewTextBoxColumn.HeaderText = "rut";
-            this.rutDataGridViewTextBoxColumn.Name = "rutDataGridViewTextBoxColumn";
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            // 
-            // direccionDataGridViewTextBoxColumn
-            // 
-            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
-            this.direccionDataGridViewTextBoxColumn.HeaderText = "direccion";
-            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
-            // 
-            // telefonoDataGridViewTextBoxColumn
-            // 
-            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
-            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
-            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
-            // 
-            // cuentabancariaDataGridViewTextBoxColumn
-            // 
-            this.cuentabancariaDataGridViewTextBoxColumn.DataPropertyName = "cuenta_bancaria";
-            this.cuentabancariaDataGridViewTextBoxColumn.HeaderText = "cuenta_bancaria";
-            this.cuentabancariaDataGridViewTextBoxColumn.Name = "cuentabancariaDataGridViewTextBoxColumn";
-            // 
-            // bancoDataGridViewTextBoxColumn
-            // 
-            this.bancoDataGridViewTextBoxColumn.DataPropertyName = "banco";
-            this.bancoDataGridViewTextBoxColumn.HeaderText = "banco";
-            this.bancoDataGridViewTextBoxColumn.Name = "bancoDataGridViewTextBoxColumn";
             // 
             // sOCIOBindingSource
             // 
@@ -123,11 +87,50 @@
             // 
             this.sOCIOTableAdapter.ClearBeforeFill = true;
             // 
+            // rutDataGridViewTextBoxColumn
+            // 
+            this.rutDataGridViewTextBoxColumn.DataPropertyName = "rut";
+            this.rutDataGridViewTextBoxColumn.HeaderText = "rut";
+            this.rutDataGridViewTextBoxColumn.Name = "rutDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            this.direccionDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            // 
+            // cuentabancariaDataGridViewTextBoxColumn
+            // 
+            this.cuentabancariaDataGridViewTextBoxColumn.DataPropertyName = "cuenta_bancaria";
+            this.cuentabancariaDataGridViewTextBoxColumn.HeaderText = "cuenta_bancaria";
+            this.cuentabancariaDataGridViewTextBoxColumn.Name = "cuentabancariaDataGridViewTextBoxColumn";
+            this.cuentabancariaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // bancoDataGridViewTextBoxColumn
+            // 
+            this.bancoDataGridViewTextBoxColumn.DataPropertyName = "banco";
+            this.bancoDataGridViewTextBoxColumn.HeaderText = "banco";
+            this.bancoDataGridViewTextBoxColumn.Name = "bancoDataGridViewTextBoxColumn";
+            // 
             // ListadeSocios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1015, 510);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Name = "ListadeSocios";

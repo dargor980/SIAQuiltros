@@ -127,5 +127,11 @@ namespace SIAQuiltros
             Form SearchVoluntario = new ConsultarVoluntario();
             SearchVoluntario.Show();
         }
+
+        private void mostrarListaDeVoluntariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ShowlistVoluntarios = new MostrarListadeVoluntarios();
+            ShowlistVoluntarios.Show();
+        }
     }
 }

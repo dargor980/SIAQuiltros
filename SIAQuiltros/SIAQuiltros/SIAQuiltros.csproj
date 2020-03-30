@@ -154,6 +154,12 @@
     <Compile Include="Actualizar datos de Socio.Designer.cs">
       <DependentUpon>Actualizar datos de Socio.cs</DependentUpon>
     </Compile>
+    <Compile Include="MostrarListadeVoluntarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarListadeVoluntarios.Designer.cs">
+      <DependentUpon>MostrarListadeVoluntarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QUILTROSDataSet.Designer.cs">
@@ -161,11 +167,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUILTROSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QUILTROSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUILTROSDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ResultadoConsultaHogarTemporal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ResultadoConsultaHogarTemporal.Designer.cs">
       <DependentUpon>ResultadoConsultaHogarTemporal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultadoConsultaVoluntario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultadoConsultaVoluntario.Designer.cs">
+      <DependentUpon>ResultadoConsultaVoluntario.cs</DependentUpon>
     </Compile>
     <Compile Include="SolicitarContraseña.cs">
       <SubType>Form</SubType>
@@ -221,6 +238,9 @@
     <EmbeddedResource Include="Actualizar datos de Socio.resx">
       <DependentUpon>Actualizar datos de Socio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MostrarListadeVoluntarios.resx">
+      <DependentUpon>MostrarListadeVoluntarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -259,6 +279,17 @@
     </None>
     <None Include="QUILTROSDataSet.xss">
       <DependentUpon>QUILTROSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUILTROSDataSet1.xsc">
+      <DependentUpon>QUILTROSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUILTROSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUILTROSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUILTROSDataSet1.xss">
+      <DependentUpon>QUILTROSDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

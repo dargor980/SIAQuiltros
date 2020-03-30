@@ -75,6 +75,7 @@
             this.Search.TabIndex = 3;
             this.Search.Text = "Consultar";
             this.Search.UseVisualStyleBackColor = true;
+            this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
             // Cancel
             // 
