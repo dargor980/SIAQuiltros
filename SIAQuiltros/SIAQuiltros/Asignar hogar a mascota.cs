@@ -44,12 +44,12 @@ namespace SIAQuiltros
                 SqlDataReader LECTURA = comando3.ExecuteReader();
                 while(LECTURA.Read())
                 {
-                    comboBox1.Items.Add("Hogar de " + LECTURA["nombre"].ToString());
+                    comboBox1.Items.Add(LECTURA["nombre"].ToString());
                 }
             }
             conexion.Close();
             conexion.Open();
-            String query2 = "SELECT *FROM MASCOTA";
+            String query2 = "SELECT nombre FROM MASCOTA WHERE cod_chip NOT IN(SELECT h.cod_mascota FROM HOGAR_TEMPORAL h,  MASCOTA m where h.cod_mascota=m.cod_chip)";
             SqlCommand comando2 = new SqlCommand(query2, conexion);
             SqlDataReader lectura2 = comando2.ExecuteReader();
             while(lectura2.Read())
