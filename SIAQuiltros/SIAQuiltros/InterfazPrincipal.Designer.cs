@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InterfazPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +71,9 @@
             this.mostrarTodasLasDonacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarDonacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -298,7 +301,7 @@
             // calendarioDeActividadesToolStripMenuItem
             // 
             this.calendarioDeActividadesToolStripMenuItem.Name = "calendarioDeActividadesToolStripMenuItem";
-            this.calendarioDeActividadesToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.calendarioDeActividadesToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.calendarioDeActividadesToolStripMenuItem.Text = "Calendario de actividades";
             // 
             // acercaDeToolStripMenuItem
@@ -313,13 +316,14 @@
             // acercaDeQuiltrosToolStripMenuItem
             // 
             this.acercaDeQuiltrosToolStripMenuItem.Name = "acercaDeQuiltrosToolStripMenuItem";
-            this.acercaDeQuiltrosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.acercaDeQuiltrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeQuiltrosToolStripMenuItem.Text = "Acerca de Quiltros";
             this.acercaDeQuiltrosToolStripMenuItem.Click += new System.EventHandler(this.acercaDeQuiltrosToolStripMenuItem_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(50, 60);
             this.label1.Name = "label1";
@@ -330,6 +334,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(151, 60);
             this.label2.Name = "label2";
@@ -399,11 +404,24 @@
             this.ingresarSocioToolStripMenuItem.Text = "Ingresar socio";
             this.ingresarSocioToolStripMenuItem.Click += new System.EventHandler(this.ingresarSocioToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(-41, 102);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(330, 355);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // InterfazPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -413,6 +431,7 @@
             this.Text = "Quiltros- Plataforma de gestión integrada";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,5 +481,6 @@
         private System.Windows.Forms.ToolStripMenuItem mostrarTodasLasDonacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarDonacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarSocioToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
