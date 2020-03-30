@@ -33,6 +33,10 @@
             this.optionQuery = new System.Windows.Forms.ComboBox();
             this.Search = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rut = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 100);
+            this.label2.Location = new System.Drawing.Point(50, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 1;
@@ -57,7 +61,7 @@
             // optionQuery
             // 
             this.optionQuery.FormattingEnabled = true;
-            this.optionQuery.Location = new System.Drawing.Point(132, 97);
+            this.optionQuery.Location = new System.Drawing.Point(220, 97);
             this.optionQuery.Name = "optionQuery";
             this.optionQuery.Size = new System.Drawing.Size(121, 21);
             this.optionQuery.TabIndex = 2;
@@ -65,7 +69,7 @@
             // 
             // Search
             // 
-            this.Search.Location = new System.Drawing.Point(261, 150);
+            this.Search.Location = new System.Drawing.Point(266, 215);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(75, 23);
             this.Search.TabIndex = 3;
@@ -74,18 +78,57 @@
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(177, 149);
+            this.Cancel.Location = new System.Drawing.Point(183, 215);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(75, 23);
             this.Cancel.TabIndex = 4;
             this.Cancel.Text = "Cancelar";
             this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(50, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(164, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Ingrese Rut (Sin puntos ni guión):";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(50, 160);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Ingrese nombre:";
+            // 
+            // rut
+            // 
+            this.rut.Location = new System.Drawing.Point(220, 127);
+            this.rut.MaxLength = 9;
+            this.rut.Name = "rut";
+            this.rut.Size = new System.Drawing.Size(100, 20);
+            this.rut.TabIndex = 7;
+            // 
+            // name
+            // 
+            this.name.Location = new System.Drawing.Point(220, 157);
+            this.name.MaxLength = 100;
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(100, 20);
+            this.name.TabIndex = 8;
             // 
             // ConsultarVoluntario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 211);
+            this.ClientSize = new System.Drawing.Size(395, 264);
+            this.Controls.Add(this.name);
+            this.Controls.Add(this.rut);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.optionQuery);
@@ -106,5 +149,9 @@
         private System.Windows.Forms.ComboBox optionQuery;
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox rut;
+        private System.Windows.Forms.TextBox name;
     }
 }
