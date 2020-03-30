@@ -159,6 +159,7 @@
             this.revisarVoluntarioEnEspecíficoToolStripMenuItem.Name = "revisarVoluntarioEnEspecíficoToolStripMenuItem";
             this.revisarVoluntarioEnEspecíficoToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
             this.revisarVoluntarioEnEspecíficoToolStripMenuItem.Text = "Revisar voluntario en específico";
+            this.revisarVoluntarioEnEspecíficoToolStripMenuItem.Click += new System.EventHandler(this.revisarVoluntarioEnEspecíficoToolStripMenuItem_Click);
             // 
             // mostrarListaDeVoluntariosToolStripMenuItem
             // 

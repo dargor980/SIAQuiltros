@@ -121,5 +121,11 @@ namespace SIAQuiltros
             Form InsertSocio = new IngresarSocio();
             InsertSocio.Show();
         }
+
+        private void revisarVoluntarioEnEspecíficoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form SearchVoluntario = new ConsultarVoluntario();
+            SearchVoluntario.Show();
+        }
     }
 }

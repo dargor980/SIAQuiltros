@@ -100,6 +100,12 @@
     <Compile Include="Consultar estado hogares.Designer.cs">
       <DependentUpon>Consultar estado hogares.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarVoluntario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVoluntario.Designer.cs">
+      <DependentUpon>ConsultarVoluntario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Detalles consulta socio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar estado hogares.resx">
       <DependentUpon>Consultar estado hogares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVoluntario.resx">
+      <DependentUpon>ConsultarVoluntario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Detalles consulta socio.resx">
       <DependentUpon>Detalles consulta socio.cs</DependentUpon>
