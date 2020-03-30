@@ -104,5 +104,16 @@ namespace SIAQuiltros
             Form ADMIN = new Ingreso_modo_Administrador();
             ADMIN.Show();
         }
+
+        private void EliminarHogarTemporalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actualizarDatosDeSociosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form UpdateSocios = new ActualizarDatosSocios();
+            UpdateSocios.Show();
+        }
     }
 }

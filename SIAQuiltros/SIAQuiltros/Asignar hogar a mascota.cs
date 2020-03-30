@@ -56,6 +56,7 @@ namespace SIAQuiltros
             {
                 comboBox2.Items.Add(lectura2["nombre"].ToString());
             }
+            conexion.Close();
             
         }
 

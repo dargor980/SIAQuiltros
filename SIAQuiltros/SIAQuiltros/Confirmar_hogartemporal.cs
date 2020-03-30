@@ -46,6 +46,7 @@ namespace SIAQuiltros
                 SqlCommand comando = new SqlCommand(query, conexion);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("La mascota ha sido ingresada correctamente.");
+                conexion.Close();
             }
             catch(SqlException ex)
             {

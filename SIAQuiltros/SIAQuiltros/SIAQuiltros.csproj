@@ -136,11 +136,11 @@
     <Compile Include="ListadeSocios.Designer.cs">
       <DependentUpon>ListadeSocios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mostrar lista de socios.cs">
+    <Compile Include="Actualizar datos de Socio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mostrar lista de socios.Designer.cs">
-      <DependentUpon>Mostrar lista de socios.cs</DependentUpon>
+    <Compile Include="Actualizar datos de Socio.Designer.cs">
+      <DependentUpon>Actualizar datos de Socio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -194,8 +194,8 @@
     <EmbeddedResource Include="ListadeSocios.resx">
       <DependentUpon>ListadeSocios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mostrar lista de socios.resx">
-      <DependentUpon>Mostrar lista de socios.cs</DependentUpon>
+    <EmbeddedResource Include="Actualizar datos de Socio.resx">
+      <DependentUpon>Actualizar datos de Socio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

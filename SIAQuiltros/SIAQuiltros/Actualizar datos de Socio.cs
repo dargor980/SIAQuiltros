@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SIAQuiltros
 {
-    public partial class Mostrar_lista_de_socios : Form
+    public partial class ActualizarDatosSocios : Form
     {
-        public Mostrar_lista_de_socios()
+        public ActualizarDatosSocios()
         {
             InitializeComponent();
         }
