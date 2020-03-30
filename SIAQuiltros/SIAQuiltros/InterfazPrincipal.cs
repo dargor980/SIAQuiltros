@@ -115,5 +115,11 @@ namespace SIAQuiltros
             Form UpdateSocios = new ActualizarDatosSocios();
             UpdateSocios.Show();
         }
+
+        private void ingresarSocioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form InsertSocio = new IngresarSocio();
+            InsertSocio.Show();
+        }
     }
 }

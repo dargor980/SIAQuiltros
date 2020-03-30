@@ -69,6 +69,7 @@
             this.donacionesPorSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarTodasLasDonacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarDonacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,9 +83,9 @@
             this.mascotasToolStripMenuItem,
             this.verToolStripMenuItem,
             this.actividadesToolStripMenuItem,
-            this.acercaDeToolStripMenuItem,
             this.adoptantesToolStripMenuItem,
-            this.donacionesToolStripMenuItem});
+            this.donacionesToolStripMenuItem,
+            this.acercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -184,6 +185,7 @@
             // sociosToolStripMenuItem
             // 
             this.sociosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarSocioToolStripMenuItem,
             this.consultarEstadoDeSocioToolStripMenuItem,
             this.mostrarListaDeSociosToolStripMenuItem,
             this.actualizarDatosDeSociosToolStripMenuItem});
@@ -390,6 +392,13 @@
             this.ingresarDonacionesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.ingresarDonacionesToolStripMenuItem.Text = "Ingresar Donaciones";
             // 
+            // ingresarSocioToolStripMenuItem
+            // 
+            this.ingresarSocioToolStripMenuItem.Name = "ingresarSocioToolStripMenuItem";
+            this.ingresarSocioToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.ingresarSocioToolStripMenuItem.Text = "Ingresar socio";
+            this.ingresarSocioToolStripMenuItem.Click += new System.EventHandler(this.ingresarSocioToolStripMenuItem_Click);
+            // 
             // InterfazPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -452,5 +461,6 @@
         private System.Windows.Forms.ToolStripMenuItem donacionesPorSocioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mostrarTodasLasDonacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarDonacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresarSocioToolStripMenuItem;
     }
 }
