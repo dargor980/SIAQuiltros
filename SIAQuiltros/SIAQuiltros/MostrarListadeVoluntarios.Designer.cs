@@ -30,18 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.qUILTROSDataSet1 = new SIAQuiltros.QUILTROSDataSet1();
-            this.vOLUNTARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vOLUNTARIOTableAdapter = new SIAQuiltros.QUILTROSDataSet1TableAdapters.VOLUNTARIOTableAdapter();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codcredencialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vOLUNTARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qUILTROSDataSet1 = new SIAQuiltros.QUILTROSDataSet1();
+            this.vOLUNTARIOTableAdapter = new SIAQuiltros.QUILTROSDataSet1TableAdapters.VOLUNTARIOTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUILTROSDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vOLUNTARIOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUILTROSDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -60,20 +61,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(944, 376);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // qUILTROSDataSet1
-            // 
-            this.qUILTROSDataSet1.DataSetName = "QUILTROSDataSet1";
-            this.qUILTROSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vOLUNTARIOBindingSource
-            // 
-            this.vOLUNTARIOBindingSource.DataMember = "VOLUNTARIO";
-            this.vOLUNTARIOBindingSource.DataSource = this.qUILTROSDataSet1;
-            // 
-            // vOLUNTARIOTableAdapter
-            // 
-            this.vOLUNTARIOTableAdapter.ClearBeforeFill = true;
             // 
             // nombreDataGridViewTextBoxColumn
             // 
@@ -114,18 +101,43 @@
             this.correoDataGridViewTextBoxColumn.Name = "correoDataGridViewTextBoxColumn";
             this.correoDataGridViewTextBoxColumn.Width = 200;
             // 
+            // vOLUNTARIOBindingSource
+            // 
+            this.vOLUNTARIOBindingSource.DataMember = "VOLUNTARIO";
+            this.vOLUNTARIOBindingSource.DataSource = this.qUILTROSDataSet1;
+            // 
+            // qUILTROSDataSet1
+            // 
+            this.qUILTROSDataSet1.DataSetName = "QUILTROSDataSet1";
+            this.qUILTROSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vOLUNTARIOTableAdapter
+            // 
+            this.vOLUNTARIOTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(413, 403);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Generar Reporte PDF";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MostrarListadeVoluntarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 438);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "MostrarListadeVoluntarios";
             this.Text = "MostrarListadeVoluntarios";
             this.Load += new System.EventHandler(this.MostrarListadeVoluntarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUILTROSDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vOLUNTARIOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUILTROSDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,5 +154,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
     }
 }

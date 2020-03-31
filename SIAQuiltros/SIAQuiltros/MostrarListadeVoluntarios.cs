@@ -23,5 +23,16 @@ namespace SIAQuiltros
             this.vOLUNTARIOTableAdapter.Fill(this.qUILTROSDataSet1.VOLUNTARIO);
 
         }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form Report = new Reporte_PDF();
+            Report.Show();
+        }
     }
 }
