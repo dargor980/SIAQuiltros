@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarVoluntario));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.optionQuery = new System.Windows.Forms.ComboBox();
@@ -135,6 +136,7 @@
             this.Controls.Add(this.optionQuery);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultarVoluntario";
             this.Text = "Consultar Voluntario";
             this.Load += new System.EventHandler(this.ConsultarVoluntario_Load);

@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reporte_PDF));
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.QUILTROSDataSet1 = new SIAQuiltros.QUILTROSDataSet1();
             this.VOLUNTARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -41,9 +42,9 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.VOLUNTARIOBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.VOLUNTARIOBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "SIAQuiltros.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -72,8 +73,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Reporte_PDF";
-            this.Text = "Reporte_PDF";
+            this.Text = "Reporte PDF";
             this.Load += new System.EventHandler(this.Reporte_PDF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.QUILTROSDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VOLUNTARIOBindingSource)).EndInit();

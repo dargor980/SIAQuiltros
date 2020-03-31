@@ -43,6 +43,7 @@
             this.actualizarEstadoDeVoluntariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarVoluntarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarEstadoDeSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarListaDeSociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarDatosDeSociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,19 +59,18 @@
             this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendarioDeActividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeQuiltrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.historialDeActividadesRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adoptantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarAdoptanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialDeActividadesRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.donacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarDonacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.donacionesPorSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarTodasLasDonacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarDonacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeQuiltrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -198,6 +198,13 @@
             this.sociosToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.sociosToolStripMenuItem.Text = "Socios";
             // 
+            // ingresarSocioToolStripMenuItem
+            // 
+            this.ingresarSocioToolStripMenuItem.Name = "ingresarSocioToolStripMenuItem";
+            this.ingresarSocioToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.ingresarSocioToolStripMenuItem.Text = "Ingresar socio";
+            this.ingresarSocioToolStripMenuItem.Click += new System.EventHandler(this.ingresarSocioToolStripMenuItem_Click);
+            // 
             // consultarEstadoDeSocioToolStripMenuItem
             // 
             this.consultarEstadoDeSocioToolStripMenuItem.Name = "consultarEstadoDeSocioToolStripMenuItem";
@@ -306,42 +313,11 @@
             this.calendarioDeActividadesToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.calendarioDeActividadesToolStripMenuItem.Text = "Calendario de actividades";
             // 
-            // acercaDeToolStripMenuItem
+            // historialDeActividadesRealizadasToolStripMenuItem
             // 
-            this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acercaDeQuiltrosToolStripMenuItem});
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.acercaDeToolStripMenuItem.Text = "Ayuda";
-            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
-            // 
-            // acercaDeQuiltrosToolStripMenuItem
-            // 
-            this.acercaDeQuiltrosToolStripMenuItem.Name = "acercaDeQuiltrosToolStripMenuItem";
-            this.acercaDeQuiltrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.acercaDeQuiltrosToolStripMenuItem.Text = "Acerca de Quiltros";
-            this.acercaDeQuiltrosToolStripMenuItem.Click += new System.EventHandler(this.acercaDeQuiltrosToolStripMenuItem_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bienvenido, ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(151, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 20);
-            this.label2.TabIndex = 2;
+            this.historialDeActividadesRealizadasToolStripMenuItem.Name = "historialDeActividadesRealizadasToolStripMenuItem";
+            this.historialDeActividadesRealizadasToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
+            this.historialDeActividadesRealizadasToolStripMenuItem.Text = "Historial de Actividades Realizadas";
             // 
             // adoptantesToolStripMenuItem
             // 
@@ -356,12 +332,6 @@
             this.consultarAdoptanteToolStripMenuItem.Name = "consultarAdoptanteToolStripMenuItem";
             this.consultarAdoptanteToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.consultarAdoptanteToolStripMenuItem.Text = "Consultar Adoptante";
-            // 
-            // historialDeActividadesRealizadasToolStripMenuItem
-            // 
-            this.historialDeActividadesRealizadasToolStripMenuItem.Name = "historialDeActividadesRealizadasToolStripMenuItem";
-            this.historialDeActividadesRealizadasToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
-            this.historialDeActividadesRealizadasToolStripMenuItem.Text = "Historial de Actividades Realizadas";
             // 
             // donacionesToolStripMenuItem
             // 
@@ -399,12 +369,42 @@
             this.ingresarDonacionesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.ingresarDonacionesToolStripMenuItem.Text = "Ingresar Donaciones";
             // 
-            // ingresarSocioToolStripMenuItem
+            // acercaDeToolStripMenuItem
             // 
-            this.ingresarSocioToolStripMenuItem.Name = "ingresarSocioToolStripMenuItem";
-            this.ingresarSocioToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.ingresarSocioToolStripMenuItem.Text = "Ingresar socio";
-            this.ingresarSocioToolStripMenuItem.Click += new System.EventHandler(this.ingresarSocioToolStripMenuItem_Click);
+            this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acercaDeQuiltrosToolStripMenuItem});
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.acercaDeToolStripMenuItem.Text = "Ayuda";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            // 
+            // acercaDeQuiltrosToolStripMenuItem
+            // 
+            this.acercaDeQuiltrosToolStripMenuItem.Name = "acercaDeQuiltrosToolStripMenuItem";
+            this.acercaDeQuiltrosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.acercaDeQuiltrosToolStripMenuItem.Text = "Acerca de Quiltros";
+            this.acercaDeQuiltrosToolStripMenuItem.Click += new System.EventHandler(this.acercaDeQuiltrosToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(50, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Bienvenido, ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(151, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 20);
+            this.label2.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -427,6 +427,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "InterfazPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

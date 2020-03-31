@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarDatosSocios));
             this.label1 = new System.Windows.Forms.Label();
             this.rut = new System.Windows.Forms.TextBox();
             this.Search = new System.Windows.Forms.Button();
@@ -68,6 +69,7 @@
             this.Controls.Add(this.Search);
             this.Controls.Add(this.rut);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ActualizarDatosSocios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Actualizar Datos de Socio";

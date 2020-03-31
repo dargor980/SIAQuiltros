@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListadeSocios));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sOCIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qUILTROSDataSet = new SIAQuiltros.QUILTROSDataSet();
-            this.sOCIOTableAdapter = new SIAQuiltros.QUILTROSDataSetTableAdapters.SOCIOTableAdapter();
             this.rutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cuentabancariaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bancoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sOCIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qUILTROSDataSet = new SIAQuiltros.QUILTROSDataSet();
+            this.sOCIOTableAdapter = new SIAQuiltros.QUILTROSDataSetTableAdapters.SOCIOTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sOCIOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUILTROSDataSet)).BeginInit();
@@ -72,20 +73,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(993, 426);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // sOCIOBindingSource
-            // 
-            this.sOCIOBindingSource.DataMember = "SOCIO";
-            this.sOCIOBindingSource.DataSource = this.qUILTROSDataSet;
-            // 
-            // qUILTROSDataSet
-            // 
-            this.qUILTROSDataSet.DataSetName = "QUILTROSDataSet";
-            this.qUILTROSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sOCIOTableAdapter
-            // 
-            this.sOCIOTableAdapter.ClearBeforeFill = true;
             // 
             // rutDataGridViewTextBoxColumn
             // 
@@ -126,6 +113,20 @@
             this.bancoDataGridViewTextBoxColumn.HeaderText = "banco";
             this.bancoDataGridViewTextBoxColumn.Name = "bancoDataGridViewTextBoxColumn";
             // 
+            // sOCIOBindingSource
+            // 
+            this.sOCIOBindingSource.DataMember = "SOCIO";
+            this.sOCIOBindingSource.DataSource = this.qUILTROSDataSet;
+            // 
+            // qUILTROSDataSet
+            // 
+            this.qUILTROSDataSet.DataSetName = "QUILTROSDataSet";
+            this.qUILTROSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sOCIOTableAdapter
+            // 
+            this.sOCIOTableAdapter.ClearBeforeFill = true;
+            // 
             // ListadeSocios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -133,6 +134,7 @@
             this.ClientSize = new System.Drawing.Size(1015, 510);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListadeSocios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListadeSocios";
