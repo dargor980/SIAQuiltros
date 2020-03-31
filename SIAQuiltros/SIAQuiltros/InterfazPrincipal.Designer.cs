@@ -53,7 +53,7 @@
             this.EliminarHogarTemporalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mostrarEstadoMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mostrarFichaMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarListaDeMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -261,7 +261,7 @@
             // 
             this.mascotasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresarMascotaToolStripMenuItem,
-            this.mostrarEstadoMascotaToolStripMenuItem,
+            this.mostrarFichaMascotaToolStripMenuItem,
             this.mostrarListaDeMascotasToolStripMenuItem,
             this.eliminarMascotaToolStripMenuItem});
             this.mascotasToolStripMenuItem.Name = "mascotasToolStripMenuItem";
@@ -275,11 +275,12 @@
             this.ingresarMascotaToolStripMenuItem.Text = "Ingresar Mascota";
             this.ingresarMascotaToolStripMenuItem.Click += new System.EventHandler(this.ingresarMascotaToolStripMenuItem_Click);
             // 
-            // mostrarEstadoMascotaToolStripMenuItem
+            // mostrarFichaMascotaToolStripMenuItem
             // 
-            this.mostrarEstadoMascotaToolStripMenuItem.Name = "mostrarEstadoMascotaToolStripMenuItem";
-            this.mostrarEstadoMascotaToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.mostrarEstadoMascotaToolStripMenuItem.Text = "Mostrar estado Mascota";
+            this.mostrarFichaMascotaToolStripMenuItem.Name = "mostrarFichaMascotaToolStripMenuItem";
+            this.mostrarFichaMascotaToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.mostrarFichaMascotaToolStripMenuItem.Text = "Ficha de Mascota";
+            this.mostrarFichaMascotaToolStripMenuItem.Click += new System.EventHandler(this.mostrarFichaMascotaToolStripMenuItem_Click);
             // 
             // mostrarListaDeMascotasToolStripMenuItem
             // 
@@ -382,7 +383,7 @@
             // acercaDeQuiltrosToolStripMenuItem
             // 
             this.acercaDeQuiltrosToolStripMenuItem.Name = "acercaDeQuiltrosToolStripMenuItem";
-            this.acercaDeQuiltrosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.acercaDeQuiltrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeQuiltrosToolStripMenuItem.Text = "Acerca de Quiltros";
             this.acercaDeQuiltrosToolStripMenuItem.Click += new System.EventHandler(this.acercaDeQuiltrosToolStripMenuItem_Click);
             // 
@@ -473,7 +474,7 @@
         private System.Windows.Forms.ToolStripMenuItem actualizarDatosDeSociosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem EliminarHogarTemporalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarMascotaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mostrarEstadoMascotaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mostrarFichaMascotaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mostrarListaDeMascotasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarMascotaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialDeActividadesRealizadasToolStripMenuItem;

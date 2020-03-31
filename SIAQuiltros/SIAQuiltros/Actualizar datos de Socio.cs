@@ -40,5 +40,10 @@ namespace SIAQuiltros
                 rut.Text = "";
             }       
         }
+
+        private void ActualizarDatosSocios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -73,6 +73,7 @@
             this.Name = "ActualizarDatosSocios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Actualizar Datos de Socio";
+            this.Load += new System.EventHandler(this.ActualizarDatosSocios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

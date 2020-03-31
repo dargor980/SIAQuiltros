@@ -130,6 +130,12 @@
     <Compile Include="Detalles consulta socio.Designer.cs">
       <DependentUpon>Detalles consulta socio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FichaMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FichaMascota.Designer.cs">
+      <DependentUpon>FichaMascota.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Detalles consulta socio.resx">
       <DependentUpon>Detalles consulta socio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FichaMascota.resx">
+      <DependentUpon>FichaMascota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

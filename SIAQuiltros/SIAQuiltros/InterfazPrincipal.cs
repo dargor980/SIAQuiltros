@@ -139,5 +139,11 @@ namespace SIAQuiltros
             Form InsertMascota = new Ingresar_Mascota();
             InsertMascota.Show();
         }
+
+        private void mostrarFichaMascotaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form FichaMascota = new FichaMascota();
+            FichaMascota.Show();
+        }
     }
 }
