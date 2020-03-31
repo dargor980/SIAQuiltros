@@ -255,6 +255,7 @@
             this.Name = "Ingresar_voluntario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingresar_voluntario";
+            this.Load += new System.EventHandler(this.Ingresar_voluntario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

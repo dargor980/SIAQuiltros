@@ -113,5 +113,10 @@ namespace SIAQuiltros
         {
             this.Close();
         }
+
+        private void Ingresar_voluntario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

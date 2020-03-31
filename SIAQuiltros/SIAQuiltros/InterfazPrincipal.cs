@@ -133,5 +133,11 @@ namespace SIAQuiltros
             Form ShowlistVoluntarios = new MostrarListadeVoluntarios();
             ShowlistVoluntarios.Show();
         }
+
+        private void ingresarMascotaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form InsertMascota = new Ingresar_Mascota();
+            InsertMascota.Show();
+        }
     }
 }

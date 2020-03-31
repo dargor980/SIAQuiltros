@@ -273,6 +273,7 @@
             this.ingresarMascotaToolStripMenuItem.Name = "ingresarMascotaToolStripMenuItem";
             this.ingresarMascotaToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.ingresarMascotaToolStripMenuItem.Text = "Ingresar Mascota";
+            this.ingresarMascotaToolStripMenuItem.Click += new System.EventHandler(this.ingresarMascotaToolStripMenuItem_Click);
             // 
             // mostrarEstadoMascotaToolStripMenuItem
             // 
