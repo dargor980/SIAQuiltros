@@ -124,6 +124,12 @@
     <Compile Include="Consultar estado hogares.Designer.cs">
       <DependentUpon>Consultar estado hogares.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarMascota.Designer.cs">
+      <DependentUpon>ConsultarMascota.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarVoluntario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar estado hogares.resx">
       <DependentUpon>Consultar estado hogares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarMascota.resx">
+      <DependentUpon>ConsultarMascota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarVoluntario.resx">
       <DependentUpon>ConsultarVoluntario.cs</DependentUpon>

@@ -142,7 +142,7 @@ namespace SIAQuiltros
 
         private void mostrarFichaMascotaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form FichaMascota = new FichaMascota();
+            Form FichaMascota = new ConsultarMascota();
             FichaMascota.Show();
         }
 
