@@ -70,56 +70,102 @@ namespace SIAQuiltros
             SqlDataReader rdr = cmd.ExecuteReader();
             if (rdr.Read())
             {
+                con.Close();
                 return true;
             }
             else
             {
+                con.Close();
                 return false;
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if(SearchParameter.SelectedItem.ToString()=="Rut" && !IsRutVoid())
-            {
-                if(IsRutExists())
-                {
-                    SqlConnection conexion = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
-                    conexion.Open();
-                    String qry = "DELETE FROM VOLUNTARIO WHERE rut='" + RUT.Text + "'";
-                    SqlCommand cmd = new SqlCommand(qry, conexion);
-                    Form confirm = new Confirmar_eliminación_voluntario(cmd);
-                    confirm.Show();
-                }
-                else
-                {
-                    MessageBox.Show("El rut no se encuentra en los registros. Verifique que lo haya ingresado correctamente");
-                }
-                
 
+        public String GetCodCredencial(String parameter, String data)
+        {
+            SqlConnection con = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
+            con.Open();
+            String qry = "SELECT cod_credencial FROM VOLUNTARIO WHERE " + parameter + "='" + data + "'";
+            SqlCommand cmd = new SqlCommand(qry, con);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            if(rdr.Read())
+            {
+                return rdr["cod_credencial"].ToString();
             }
             else
             {
-                if(SearchParameter.SelectedItem.ToString()=="Nombre" && !IsNameVoid())
-                {
-                    if(IsNameExists())
-                    {
-                        SqlConnection conexion = new SqlConnection("server=AMADEUS ; databse=QUILTROS ; integrated security=True");
-                        conexion.Open();
-                        String qry = "DELETE FROM VOLUNTARIO WHERE nombre='" + NAME.Text + "'";
-                        SqlCommand cmd = new SqlCommand(qry, conexion);
-                        Form confirm = new Confirmar_eliminación_voluntario(cmd);
-                        confirm.Show();
+                return null;
+            }
+        }
 
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (SearchParameter.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, elija un parámetro de búsqueda");
+            }
+            else
+            {
+                if (SearchParameter.SelectedItem.ToString() == "Rut")
+                {
+                    if (!IsRutVoid())
+                    {
+                        if (IsRutExists())
+                        {
+                            String parameter ="Rut";
+                            String Data = RUT.Text;
+                            SqlConnection conexion = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
+                            conexion.Open();
+                            String qry = "DELETE FROM VOLUNTARIO WHERE rut='" + RUT.Text + "'";
+                            SqlCommand cmd = new SqlCommand(qry, conexion);
+                            String credencial = GetCodCredencial(parameter, Data);
+                            Form confirm = new Confirmar_eliminación_voluntario(cmd,credencial);
+                            confirm.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("El rut no se encuentra en los registros. Verifique que lo haya ingresado correctamente");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("El nombre no se encuentra en los registros. Verifique que lo haya ingresado correctamente");
+                        MessageBox.Show("Por favor ingrese el Rut");
                     }
-                    
+                }
+                else
+                {
+                    if (SearchParameter.SelectedItem.ToString() == "Nombre")
+                    {
+                        if (!IsNameVoid())
+                        {
+                            if (IsNameExists())
+                            {
+                                String parameter = "Rut";
+                                String Data = RUT.Text;
+                                SqlConnection conexion = new SqlConnection("server=AMADEUS ; databse=QUILTROS ; integrated security=True");
+                                conexion.Open();
+                                String qry = "DELETE FROM VOLUNTARIO WHERE nombre='" + NAME.Text + "'";
+                                SqlCommand cmd = new SqlCommand(qry, conexion);
+                                String credencial = GetCodCredencial(parameter, Data);
+                                Form confirm = new Confirmar_eliminación_voluntario(cmd,credencial);
+                                confirm.Show();
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("El nombre no se encuentra en los registros. Verifique que lo haya ingresado correctamente");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Por favor ingrese un nombre.");
+                        }
+                    }
 
                 }
-            }
-            
+
+            }                     
         }
 
         private void button2_Click(object sender, EventArgs e)
