@@ -100,6 +100,12 @@
     <Compile Include="Asignar hogar a mascota.Designer.cs">
       <DependentUpon>Asignar hogar a mascota.cs</DependentUpon>
     </Compile>
+    <Compile Include="Confirmar eliminación voluntario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmar eliminación voluntario.Designer.cs">
+      <DependentUpon>Confirmar eliminación voluntario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Confirmar_hogartemporal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,12 @@
     </Compile>
     <Compile Include="Detalles consulta socio.Designer.cs">
       <DependentUpon>Detalles consulta socio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar Voluntario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar Voluntario.Designer.cs">
+      <DependentUpon>Eliminar Voluntario.cs</DependentUpon>
     </Compile>
     <Compile Include="FichaMascota.cs">
       <SubType>Form</SubType>
@@ -239,6 +251,9 @@
     <EmbeddedResource Include="Asignar hogar a mascota.resx">
       <DependentUpon>Asignar hogar a mascota.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Confirmar eliminación voluntario.resx">
+      <DependentUpon>Confirmar eliminación voluntario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Confirmar_hogartemporal.resx">
       <DependentUpon>Confirmar_hogartemporal.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Detalles consulta socio.resx">
       <DependentUpon>Detalles consulta socio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar Voluntario.resx">
+      <DependentUpon>Eliminar Voluntario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FichaMascota.resx">
       <DependentUpon>FichaMascota.cs</DependentUpon>
