@@ -186,6 +186,7 @@
             this.eliminarVoluntarioToolStripMenuItem.Name = "eliminarVoluntarioToolStripMenuItem";
             this.eliminarVoluntarioToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
             this.eliminarVoluntarioToolStripMenuItem.Text = "Eliminar Voluntario";
+            this.eliminarVoluntarioToolStripMenuItem.Click += new System.EventHandler(this.eliminarVoluntarioToolStripMenuItem_Click);
             // 
             // sociosToolStripMenuItem
             // 
@@ -383,7 +384,7 @@
             // acercaDeQuiltrosToolStripMenuItem
             // 
             this.acercaDeQuiltrosToolStripMenuItem.Name = "acercaDeQuiltrosToolStripMenuItem";
-            this.acercaDeQuiltrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.acercaDeQuiltrosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.acercaDeQuiltrosToolStripMenuItem.Text = "Acerca de Quiltros";
             this.acercaDeQuiltrosToolStripMenuItem.Click += new System.EventHandler(this.acercaDeQuiltrosToolStripMenuItem_Click);
             // 

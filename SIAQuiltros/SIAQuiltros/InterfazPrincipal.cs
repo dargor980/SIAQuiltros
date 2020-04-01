@@ -145,5 +145,11 @@ namespace SIAQuiltros
             Form FichaMascota = new FichaMascota();
             FichaMascota.Show();
         }
+
+        private void eliminarVoluntarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form delete = new Eliminar_Voluntario();
+            delete.Show();
+        }
     }
 }
