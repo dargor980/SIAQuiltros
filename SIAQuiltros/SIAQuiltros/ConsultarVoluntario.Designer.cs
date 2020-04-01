@@ -137,7 +137,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(411, 303);
+            this.MinimumSize = new System.Drawing.Size(411, 303);
             this.Name = "ConsultarVoluntario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar Voluntario";
             this.Load += new System.EventHandler(this.ConsultarVoluntario_Load);
             this.ResumeLayout(false);

@@ -93,6 +93,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(439, 219);
+            this.MinimumSize = new System.Drawing.Size(439, 219);
             this.Name = "Consultar_estado_hogares";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de estado de Hogar Temporal";

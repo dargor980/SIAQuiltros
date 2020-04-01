@@ -71,6 +71,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(466, 209);
+            this.MinimumSize = new System.Drawing.Size(466, 209);
             this.Name = "Confirmar_hogartemporal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmación";

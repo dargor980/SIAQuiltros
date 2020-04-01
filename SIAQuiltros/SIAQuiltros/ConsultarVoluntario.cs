@@ -71,6 +71,9 @@ namespace SIAQuiltros
                         SqlDataReader lectura = comando.ExecuteReader();
                         if (lectura.Read())
                         {
+                            Form voluntario = new ResultadoConsultaVoluntario();
+                            voluntario.Show();
+                            this.Close();
 
                         }
                         else
@@ -97,6 +100,7 @@ namespace SIAQuiltros
                             {
                                 Form consultaVoluntario = new ResultadoConsultaVoluntario();
                                 consultaVoluntario.Show();
+                                this.Close();
                             }
                             else
                             {

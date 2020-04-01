@@ -72,6 +72,8 @@
             this.Controls.Add(this.yes);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(440, 159);
+            this.MinimumSize = new System.Drawing.Size(440, 159);
             this.Name = "Confirmar_eliminación_voluntario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmar_eliminación_voluntario";

@@ -275,6 +275,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(717, 489);
+            this.MinimumSize = new System.Drawing.Size(717, 489);
             this.Name = "IngresarSocio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Socio";

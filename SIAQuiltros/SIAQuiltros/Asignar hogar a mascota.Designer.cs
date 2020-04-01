@@ -103,6 +103,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(434, 237);
+            this.MinimumSize = new System.Drawing.Size(434, 237);
             this.Name = "Asignar_hogar_a_mascota";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asignar Hogar";

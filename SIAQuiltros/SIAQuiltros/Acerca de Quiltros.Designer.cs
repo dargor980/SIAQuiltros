@@ -128,6 +128,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(519, 377);
+            this.MinimumSize = new System.Drawing.Size(519, 377);
             this.Name = "Acerca_de_Quiltros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acerca de Quiltros";
