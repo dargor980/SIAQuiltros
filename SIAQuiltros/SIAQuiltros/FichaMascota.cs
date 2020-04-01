@@ -16,20 +16,16 @@ namespace SIAQuiltros
         SqlDataReader datos;
         String cod_mascota;
         public void ShowAntecedentesMascota(SqlDataReader rdr)
-        {
-            if(rdr.Read())
-            {
+        {   
                 PetName.Text = rdr["nombre"].ToString();
-                Cod_chip.Text = rdr["cod_mascota"].ToString();
+                Cod_chip.Text = rdr["cod_chip"].ToString();
                 Age.Text = rdr["edad"].ToString();
                 Specie.Text = rdr["especie"].ToString();
                 Tamaño.Text = rdr["tamaño"].ToString();
                 Color.Text = rdr["color"].ToString();
                 Descripción.Text = rdr["descripcion"].ToString();
                 Status.Text = rdr["estado"].ToString();
-                cod_mascota= rdr["cod_mascota"].ToString();
-            }
-
+                cod_mascota= rdr["cod_chip"].ToString();
         }
 
         public void ShowInfoAdoptante(String cod_mascota)
@@ -41,11 +37,11 @@ namespace SIAQuiltros
             SqlDataReader rdr = cmd.ExecuteReader();
             if(rdr.Read())
             {
-                Rut.Text = rdr["a.rut"].ToString();
-                NombreAdoptante.Text = rdr["a.nombre"].ToString();
-                DireccionAdoptante.Text = rdr["a.direccion"].ToString();
-                Telefono.Text = rdr["a.telefono"].ToString();
-                Comuna.Text = rdr["a.comuna"].ToString();
+                Rut.Text = rdr["rut"].ToString();
+                NombreAdoptante.Text = rdr["nombre"].ToString();
+                DireccionAdoptante.Text = rdr["direccion"].ToString();
+                Telefono.Text = rdr["telefono"].ToString();
+                Comuna.Text = rdr["comuna"].ToString();
                 con.Close();
             }
 
@@ -60,10 +56,10 @@ namespace SIAQuiltros
             SqlDataReader rdr = cmd.ExecuteReader();
             if(rdr.Read())
             {
-                DueñoHogar.Text = rdr["s.nombre"].ToString();
-                DireccionHogar.Text = rdr["h.direccion"].ToString();
-                ComunaHogar.Text = rdr["h.comuna"].ToString();
-                FechaLLegada.Text = rdr["h.fecha_llegada"].ToString();
+                DueñoHogar.Text = rdr["nombre"].ToString();
+                DireccionHogar.Text = rdr["direccion"].ToString();
+                ComunaHogar.Text = rdr["comuna"].ToString();
+                FechaLLegada.Text = rdr["fecha_llegada"].ToString();
                 FechaSalida.Text = rdr["fecha_salida"].ToString();
                 con.Close();
             }
@@ -75,12 +71,13 @@ namespace SIAQuiltros
             ShowAntecedentesMascota(datos);
             ShowInfoAdoptante(cod_mascota);
             ShowinfoHogar(cod_mascota);
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
+            ShowInfoAdoptante(cod_mascota);
 
         }
+            private void groupBox1_Enter(object sender, EventArgs e)
+            {
+
+            }
 
         private void Cerrar_Click(object sender, EventArgs e)
         {
