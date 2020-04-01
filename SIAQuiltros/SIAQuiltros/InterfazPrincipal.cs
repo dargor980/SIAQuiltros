@@ -151,5 +151,11 @@ namespace SIAQuiltros
             Form delete = new Eliminar_Voluntario();
             delete.Show();
         }
+
+        private void asignarCuidadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form asignar = new Asignar_Cuidador();
+            asignar.Show();
+        }
     }
 }

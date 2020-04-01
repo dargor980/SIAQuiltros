@@ -72,6 +72,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.asignarCuidadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -263,6 +264,7 @@
             this.mascotasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresarMascotaToolStripMenuItem,
             this.mostrarFichaMascotaToolStripMenuItem,
+            this.asignarCuidadorToolStripMenuItem,
             this.mostrarListaDeMascotasToolStripMenuItem,
             this.eliminarMascotaToolStripMenuItem});
             this.mascotasToolStripMenuItem.Name = "mascotasToolStripMenuItem";
@@ -419,6 +421,13 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // asignarCuidadorToolStripMenuItem
+            // 
+            this.asignarCuidadorToolStripMenuItem.Name = "asignarCuidadorToolStripMenuItem";
+            this.asignarCuidadorToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.asignarCuidadorToolStripMenuItem.Text = "Asignar cuidador";
+            this.asignarCuidadorToolStripMenuItem.Click += new System.EventHandler(this.asignarCuidadorToolStripMenuItem_Click);
+            // 
             // InterfazPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -490,5 +499,6 @@
         private System.Windows.Forms.ToolStripMenuItem ingresarDonacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarSocioToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem asignarCuidadorToolStripMenuItem;
     }
 }
