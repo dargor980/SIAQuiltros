@@ -15,12 +15,14 @@ namespace SIAQuiltros
     {
         SqlCommand delete;
         String cod_credencial;
-        public Confirmar_eliminación_voluntario(SqlCommand cmd,String credencial)
+        String name;
+        public Confirmar_eliminación_voluntario(SqlCommand cmd,String credencial,String nombre)
         {
             InitializeComponent();
             SqlCommand comando = cmd;
             delete = cmd;
             cod_credencial = credencial;
+            name = nombre;
         }
 
         public void DeleteCredential(String cod_credencial)
@@ -44,6 +46,11 @@ namespace SIAQuiltros
             DeleteCredential(cod_credencial);
             MessageBox.Show("Datos borrados correctamente");
             this.Close();
+        }
+
+        private void Confirmar_eliminación_voluntario_Load(object sender, EventArgs e)
+        {
+            label1.Text = "¿Está seguro que desea eliminar a " + name + " de los registros?";
         }
     }
 }

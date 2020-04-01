@@ -80,7 +80,7 @@ namespace SIAQuiltros
             }
         }
 
-        public String GetCodCredencial(String parameter, String data)
+        public String GetCodCredencial(String parameter, String data)//Gets the voluntary's Credential code
         {
             SqlConnection con = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
             con.Open();
@@ -90,6 +90,23 @@ namespace SIAQuiltros
             if(rdr.Read())
             {
                 return rdr["cod_credencial"].ToString();
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public string GetNombreVoluntario(string parameter, string data)
+        {
+            SqlConnection con = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
+            con.Open();
+            String qry = "SELECT nombre FROM VOLUNTARIO WHERE " + parameter + "='" + data + "'";
+            SqlCommand cmd = new SqlCommand(qry, con);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            if (rdr.Read())
+            {
+                return rdr["nombre"].ToString();
             }
             else
             {
@@ -120,7 +137,8 @@ namespace SIAQuiltros
                             String qry = "DELETE FROM VOLUNTARIO WHERE rut='" + RUT.Text + "'";
                             SqlCommand cmd = new SqlCommand(qry, conexion);
                             String credencial = GetCodCredencial(parameter, Data);
-                            Form confirm = new Confirmar_eliminación_voluntario(cmd,credencial);
+                            String name = GetNombreVoluntario(parameter, Data);
+                            Form confirm = new Confirmar_eliminación_voluntario(cmd,credencial,name);
                             confirm.Show();
                         }
                         else
@@ -148,7 +166,7 @@ namespace SIAQuiltros
                                 String qry = "DELETE FROM VOLUNTARIO WHERE nombre='" + NAME.Text + "'";
                                 SqlCommand cmd = new SqlCommand(qry, conexion);
                                 String credencial = GetCodCredencial(parameter, Data);
-                                Form confirm = new Confirmar_eliminación_voluntario(cmd,credencial);
+                                Form confirm = new Confirmar_eliminación_voluntario(cmd,credencial,NAME.Text);
                                 confirm.Show();
 
                             }

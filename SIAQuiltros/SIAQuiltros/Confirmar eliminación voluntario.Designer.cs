@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Confirmar_eliminación_voluntario));
             this.label1 = new System.Windows.Forms.Label();
             this.yes = new System.Windows.Forms.Button();
             this.no = new System.Windows.Forms.Button();
@@ -70,8 +71,11 @@
             this.Controls.Add(this.no);
             this.Controls.Add(this.yes);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Confirmar_eliminación_voluntario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmar_eliminación_voluntario";
+            this.Load += new System.EventHandler(this.Confirmar_eliminación_voluntario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

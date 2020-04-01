@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Eliminar_Voluntario));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SearchParameter = new System.Windows.Forms.ComboBox();
@@ -133,7 +134,9 @@
             this.Controls.Add(this.SearchParameter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Eliminar_Voluntario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar_Voluntario";
             this.Load += new System.EventHandler(this.Eliminar_Voluntario_Load);
             this.ResumeLayout(false);
