@@ -163,5 +163,11 @@ namespace SIAQuiltros
             Form listMAscotas = new Mostrar_Lista_de_Mascotas();
             listMAscotas.Show();
         }
+
+        private void eliminarMascotaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form eliminar = new Eliminar_Mascota();
+            eliminar.Show();
+        }
     }
 }

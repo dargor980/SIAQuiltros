@@ -304,6 +304,7 @@
             this.eliminarMascotaToolStripMenuItem.Name = "eliminarMascotaToolStripMenuItem";
             this.eliminarMascotaToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.eliminarMascotaToolStripMenuItem.Text = "Eliminar Mascota";
+            this.eliminarMascotaToolStripMenuItem.Click += new System.EventHandler(this.eliminarMascotaToolStripMenuItem_Click);
             // 
             // verToolStripMenuItem
             // 
