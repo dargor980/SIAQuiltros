@@ -170,5 +170,11 @@ namespace SIAQuiltros
             Form eliminar = new Eliminar_Mascota();
             eliminar.Show();
         }
+
+        private void ingresarAdoptanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ingresarAdoptante = new Ingresar_Adoptante();
+            ingresarAdoptante.Show();
+        }
     }
 }

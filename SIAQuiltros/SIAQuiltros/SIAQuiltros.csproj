@@ -196,6 +196,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ingresar Adoptante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar Adoptante.Designer.cs">
+      <DependentUpon>Ingresar Adoptante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ingresar Mascota.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar Adoptante.resx">
+      <DependentUpon>Ingresar Adoptante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ingresar Mascota.resx">
       <DependentUpon>Ingresar Mascota.cs</DependentUpon>

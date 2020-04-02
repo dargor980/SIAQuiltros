@@ -73,6 +73,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ingresarAdoptanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarAdoptanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -308,6 +311,8 @@
             // 
             // verToolStripMenuItem
             // 
+            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tareasToolStripMenuItem});
             this.verToolStripMenuItem.Name = "verToolStripMenuItem";
             this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.verToolStripMenuItem.Text = "Ver";
@@ -336,7 +341,9 @@
             // adoptantesToolStripMenuItem
             // 
             this.adoptantesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultarAdoptanteToolStripMenuItem});
+            this.ingresarAdoptanteToolStripMenuItem,
+            this.consultarAdoptanteToolStripMenuItem,
+            this.eliminarAdoptanteToolStripMenuItem});
             this.adoptantesToolStripMenuItem.Name = "adoptantesToolStripMenuItem";
             this.adoptantesToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.adoptantesToolStripMenuItem.Text = "Adoptantes";
@@ -430,6 +437,25 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // ingresarAdoptanteToolStripMenuItem
+            // 
+            this.ingresarAdoptanteToolStripMenuItem.Name = "ingresarAdoptanteToolStripMenuItem";
+            this.ingresarAdoptanteToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.ingresarAdoptanteToolStripMenuItem.Text = "Ingresar Adoptante";
+            this.ingresarAdoptanteToolStripMenuItem.Click += new System.EventHandler(this.ingresarAdoptanteToolStripMenuItem_Click);
+            // 
+            // tareasToolStripMenuItem
+            // 
+            this.tareasToolStripMenuItem.Name = "tareasToolStripMenuItem";
+            this.tareasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tareasToolStripMenuItem.Text = "Tareas";
+            // 
+            // eliminarAdoptanteToolStripMenuItem
+            // 
+            this.eliminarAdoptanteToolStripMenuItem.Name = "eliminarAdoptanteToolStripMenuItem";
+            this.eliminarAdoptanteToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.eliminarAdoptanteToolStripMenuItem.Text = "Eliminar Adoptante";
+            // 
             // InterfazPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,5 +528,8 @@
         private System.Windows.Forms.ToolStripMenuItem ingresarSocioToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem asignarCuidadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tareasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresarAdoptanteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarAdoptanteToolStripMenuItem;
     }
 }
