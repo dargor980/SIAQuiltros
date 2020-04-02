@@ -268,6 +268,7 @@
             this.ImgMascota.Location = new System.Drawing.Point(6, 12);
             this.ImgMascota.Name = "ImgMascota";
             this.ImgMascota.Size = new System.Drawing.Size(128, 172);
+            this.ImgMascota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImgMascota.TabIndex = 2;
             this.ImgMascota.TabStop = false;
             // 

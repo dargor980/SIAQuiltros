@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace SIAQuiltros
 {
@@ -15,6 +16,37 @@ namespace SIAQuiltros
     {
         SqlDataReader datos;
         String cod_mascota;
+
+        public void LoadImage()
+        {
+            try
+            {
+                SqlConnection conexion = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
+                conexion.Open();
+                String qry = "SELECT imagen FROM MASCOTA WHERE cod_chip='" + cod_mascota + "'";
+                SqlCommand cmd = new SqlCommand(qry, conexion);
+                SqlDataReader rdr = cmd.ExecuteReader();
+                Image newImage = null;
+                if (rdr.Read())
+                {
+                    byte[] imgData = (byte[])rdr.GetValue(0);
+
+                    using (MemoryStream ms = new MemoryStream(imgData, 0, imgData.Length))
+                    {
+                        ms.Write(imgData, 0, imgData.Length);
+                        newImage = Image.FromStream(ms, true);
+                    }
+                    ImgMascota.Image = newImage;
+                    newImage = null;
+                }
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            
+        }
         public void ShowAntecedentesMascota(SqlDataReader rdr)
         {   
                 PetName.Text = rdr["nombre"].ToString();
@@ -72,7 +104,7 @@ namespace SIAQuiltros
             ShowInfoAdoptante(cod_mascota);
             ShowinfoHogar(cod_mascota);
             ShowInfoAdoptante(cod_mascota);
-
+            LoadImage();
         }
             private void groupBox1_Enter(object sender, EventArgs e)
             {
