@@ -136,6 +136,12 @@
     <Compile Include="Confirmar_hogartemporal.Designer.cs">
       <DependentUpon>Confirmar_hogartemporal.cs</DependentUpon>
     </Compile>
+    <Compile Include="consultar adoptante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultar adoptante.Designer.cs">
+      <DependentUpon>consultar adoptante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultar estado de socio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Confirmar_hogartemporal.resx">
       <DependentUpon>Confirmar_hogartemporal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultar adoptante.resx">
+      <DependentUpon>consultar adoptante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar estado de socio.resx">
       <DependentUpon>Consultar estado de socio.cs</DependentUpon>

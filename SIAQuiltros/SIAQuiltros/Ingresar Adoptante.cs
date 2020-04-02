@@ -75,7 +75,7 @@ namespace SIAQuiltros
                     {
                         SqlConnection con = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
                         con.Open();
-                        String qry = "INSERT INTO ADOPTANTE(rut,nombre,direccion,telefono,comuna) VALUES('" + Rut.Text + "','" + Name.Text + "','" + Address + "','" + Phone.Text + "','" + Comuna.Text + "')";
+                        String qry = "INSERT INTO ADOPTANTE(rut,nombre,direccion,telefono,comuna) VALUES('" + Rut.Text + "','" + Name.Text + "','" + Address.Text + "','" + Phone.Text + "','" + Comuna.Text + "')";
                         SqlCommand cmd = new SqlCommand(qry, con);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Datos de adoptante ingresados correctamente.");
@@ -84,8 +84,7 @@ namespace SIAQuiltros
                     catch(Exception ex)
                     {
                         MessageBox.Show("Error: " + ex.Message);
-                    }
-                    
+                    }   
                 }
                 else
                 {
@@ -95,9 +94,7 @@ namespace SIAQuiltros
             else
             {
                 MessageBox.Show("Campo(s) vacío(s). Por favor, verifique que haya ingresado todos los datos solicitados.");
-            }
-            
-
+            }         
         }
     }
 }

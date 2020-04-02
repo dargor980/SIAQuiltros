@@ -353,6 +353,7 @@
             this.consultarAdoptanteToolStripMenuItem.Name = "consultarAdoptanteToolStripMenuItem";
             this.consultarAdoptanteToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.consultarAdoptanteToolStripMenuItem.Text = "Consultar Adoptante";
+            this.consultarAdoptanteToolStripMenuItem.Click += new System.EventHandler(this.consultarAdoptanteToolStripMenuItem_Click);
             // 
             // donacionesToolStripMenuItem
             // 

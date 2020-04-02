@@ -176,5 +176,11 @@ namespace SIAQuiltros
             Form ingresarAdoptante = new Ingresar_Adoptante();
             ingresarAdoptante.Show();
         }
+
+        private void consultarAdoptanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form consultarAdoptante = new consultar_adoptante();
+            consultarAdoptante.Show();
+        }
     }
 }
