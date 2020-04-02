@@ -202,6 +202,11 @@
     <Compile Include="InterfazPrincipal.Designer.cs">
       <DependentUpon>InterfazPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListadeMascotas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadeMascotas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ListadeSocios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +218,12 @@
     </Compile>
     <Compile Include="Actualizar datos de Socio.Designer.cs">
       <DependentUpon>Actualizar datos de Socio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar Lista de Mascotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar Lista de Mascotas.Designer.cs">
+      <DependentUpon>Mostrar Lista de Mascotas.cs</DependentUpon>
     </Compile>
     <Compile Include="MostrarListadeVoluntarios.cs">
       <SubType>Form</SubType>
@@ -326,6 +337,9 @@
     <EmbeddedResource Include="Actualizar datos de Socio.resx">
       <DependentUpon>Actualizar datos de Socio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar Lista de Mascotas.resx">
+      <DependentUpon>Mostrar Lista de Mascotas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MostrarListadeVoluntarios.resx">
       <DependentUpon>MostrarListadeVoluntarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +368,17 @@
     <EmbeddedResource Include="VentanaActualizarSocio.resx">
       <DependentUpon>VentanaActualizarSocio.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ListadeMascotas.xsc">
+      <DependentUpon>ListadeMascotas.xsd</DependentUpon>
+    </None>
+    <None Include="ListadeMascotas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListadeMascotas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ListadeMascotas.xss">
+      <DependentUpon>ListadeMascotas.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

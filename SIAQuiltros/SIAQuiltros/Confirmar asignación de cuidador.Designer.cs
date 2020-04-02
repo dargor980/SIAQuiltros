@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Confirmar_asignación_de_cuidador));
             this.label1 = new System.Windows.Forms.Label();
             this.Yes = new System.Windows.Forms.Button();
             this.No = new System.Windows.Forms.Button();
@@ -69,7 +70,9 @@
             this.Controls.Add(this.No);
             this.Controls.Add(this.Yes);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Confirmar_asignación_de_cuidador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmar_asignación_de_cuidador";
             this.Load += new System.EventHandler(this.Confirmar_asignación_de_cuidador_Load);
             this.ResumeLayout(false);

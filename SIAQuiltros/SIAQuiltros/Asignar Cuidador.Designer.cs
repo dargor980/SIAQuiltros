@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asignar_Cuidador));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Voluntario = new System.Windows.Forms.ComboBox();
@@ -102,8 +103,10 @@
             this.Controls.Add(this.Voluntario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Asignar_Cuidador";
-            this.Text = "Asignar_Cuidador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Asignar Cuidador";
             this.Load += new System.EventHandler(this.Asignar_Cuidador_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

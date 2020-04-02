@@ -54,6 +54,7 @@
             this.mascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarFichaMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignarCuidadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarListaDeMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,7 +73,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.asignarCuidadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -285,11 +285,19 @@
             this.mostrarFichaMascotaToolStripMenuItem.Text = "Ficha de Mascota";
             this.mostrarFichaMascotaToolStripMenuItem.Click += new System.EventHandler(this.mostrarFichaMascotaToolStripMenuItem_Click);
             // 
+            // asignarCuidadorToolStripMenuItem
+            // 
+            this.asignarCuidadorToolStripMenuItem.Name = "asignarCuidadorToolStripMenuItem";
+            this.asignarCuidadorToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.asignarCuidadorToolStripMenuItem.Text = "Asignar cuidador";
+            this.asignarCuidadorToolStripMenuItem.Click += new System.EventHandler(this.asignarCuidadorToolStripMenuItem_Click);
+            // 
             // mostrarListaDeMascotasToolStripMenuItem
             // 
             this.mostrarListaDeMascotasToolStripMenuItem.Name = "mostrarListaDeMascotasToolStripMenuItem";
             this.mostrarListaDeMascotasToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.mostrarListaDeMascotasToolStripMenuItem.Text = "Mostrar Lista de Mascotas";
+            this.mostrarListaDeMascotasToolStripMenuItem.Click += new System.EventHandler(this.mostrarListaDeMascotasToolStripMenuItem_Click);
             // 
             // eliminarMascotaToolStripMenuItem
             // 
@@ -420,13 +428,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(330, 355);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // asignarCuidadorToolStripMenuItem
-            // 
-            this.asignarCuidadorToolStripMenuItem.Name = "asignarCuidadorToolStripMenuItem";
-            this.asignarCuidadorToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.asignarCuidadorToolStripMenuItem.Text = "Asignar cuidador";
-            this.asignarCuidadorToolStripMenuItem.Click += new System.EventHandler(this.asignarCuidadorToolStripMenuItem_Click);
             // 
             // InterfazPrincipal
             // 

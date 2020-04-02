@@ -157,5 +157,11 @@ namespace SIAQuiltros
             Form asignar = new Asignar_Cuidador();
             asignar.Show();
         }
+
+        private void mostrarListaDeMascotasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form listMAscotas = new Mostrar_Lista_de_Mascotas();
+            listMAscotas.Show();
+        }
     }
 }
