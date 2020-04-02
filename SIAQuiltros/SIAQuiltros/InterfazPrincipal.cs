@@ -107,7 +107,8 @@ namespace SIAQuiltros
 
         private void EliminarHogarTemporalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form deletehogar = new Eliminar_Hogar_Temporal();
+            deletehogar.Show();
         }
 
         private void actualizarDatosDeSociosToolStripMenuItem_Click(object sender, EventArgs e)

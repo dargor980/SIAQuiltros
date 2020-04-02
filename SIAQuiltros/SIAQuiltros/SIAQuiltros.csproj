@@ -160,6 +160,12 @@
     <Compile Include="Detalles consulta socio.Designer.cs">
       <DependentUpon>Detalles consulta socio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Eliminar Hogar Temporal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar Hogar Temporal.Designer.cs">
+      <DependentUpon>Eliminar Hogar Temporal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Eliminar Mascota.cs">
       <SubType>Form</SubType>
     </Compile>
