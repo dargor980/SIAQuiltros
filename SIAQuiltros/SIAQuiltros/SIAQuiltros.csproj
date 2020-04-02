@@ -285,6 +285,12 @@
     <Compile Include="Reporte PDF.Designer.cs">
       <DependentUpon>Reporte PDF.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResultadoConsultaAdoptante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultadoConsultaAdoptante.Designer.cs">
+      <DependentUpon>ResultadoConsultaAdoptante.cs</DependentUpon>
+    </Compile>
     <Compile Include="ResultadoConsultaHogarTemporal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +415,9 @@
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Reporte PDF.resx">
       <DependentUpon>Reporte PDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultadoConsultaAdoptante.resx">
+      <DependentUpon>ResultadoConsultaAdoptante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ResultadoConsultaHogarTemporal.resx">
       <DependentUpon>ResultadoConsultaHogarTemporal.cs</DependentUpon>

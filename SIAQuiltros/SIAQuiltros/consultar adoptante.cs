@@ -67,6 +67,11 @@ namespace SIAQuiltros
                             SqlDataReader rdr = cmd.ExecuteReader();
                             if(rdr.Read())
                             {
+                                String Dato = rdr["nombre"].ToString();
+                                Form consultar = new ResultadoConsultaAdoptante(Dato);
+                                consultar.Show();
+                                con.Close();
+                                this.Close();
 
                             }
                             else
@@ -100,6 +105,11 @@ namespace SIAQuiltros
                                 SqlDataReader rdr = cmd.ExecuteReader();
                                 if(rdr.Read())
                                 {
+                                    String Dato = rdr["nombre"].ToString();
+                                    Form consultar = new ResultadoConsultaAdoptante(Dato);
+                                    consultar.Show();
+                                    con.Close();
+                                    this.Close();
 
                                 }
                                 else
