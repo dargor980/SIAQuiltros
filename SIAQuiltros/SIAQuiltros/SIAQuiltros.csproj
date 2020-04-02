@@ -106,6 +106,12 @@
     <Compile Include="Asignar hogar a mascota.Designer.cs">
       <DependentUpon>Asignar hogar a mascota.cs</DependentUpon>
     </Compile>
+    <Compile Include="Confirmar asignación de cuidador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmar asignación de cuidador.Designer.cs">
+      <DependentUpon>Confirmar asignación de cuidador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Confirmar eliminación voluntario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Asignar hogar a mascota.resx">
       <DependentUpon>Asignar hogar a mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmar asignación de cuidador.resx">
+      <DependentUpon>Confirmar asignación de cuidador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Confirmar eliminación voluntario.resx">
       <DependentUpon>Confirmar eliminación voluntario.cs</DependentUpon>
