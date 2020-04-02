@@ -53,6 +53,7 @@ namespace SIAQuiltros
         {
             Form confirmacion = new Confirmación_eliminación_de_mascota(Mascota.SelectedItem.ToString());
             confirmacion.Show();
+            GetMascotas();
         }
     }
 }
