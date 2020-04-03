@@ -363,6 +363,11 @@
       <DependentUpon>SolicitarContraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="SUMAMONTO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SUMAMONTO.xsd</DependentUpon>
+    </Compile>
     <Compile Include="VentanaActualizarSocio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -559,6 +564,17 @@
     </None>
     <None Include="QUILTROSDataSet1.xss">
       <DependentUpon>QUILTROSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SUMAMONTO.xsc">
+      <DependentUpon>SUMAMONTO.xsd</DependentUpon>
+    </None>
+    <None Include="SUMAMONTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SUMAMONTO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SUMAMONTO.xss">
+      <DependentUpon>SUMAMONTO.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
