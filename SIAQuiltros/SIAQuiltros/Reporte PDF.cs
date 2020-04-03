@@ -35,5 +35,10 @@ namespace SIAQuiltros
         {
 
         }
+
+        private void VOLUNTARIOBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
