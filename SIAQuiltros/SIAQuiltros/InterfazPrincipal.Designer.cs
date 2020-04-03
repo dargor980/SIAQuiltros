@@ -331,12 +331,14 @@
             this.calendarioDeActividadesToolStripMenuItem.Name = "calendarioDeActividadesToolStripMenuItem";
             this.calendarioDeActividadesToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.calendarioDeActividadesToolStripMenuItem.Text = "Calendario de actividades";
+            this.calendarioDeActividadesToolStripMenuItem.Click += new System.EventHandler(this.calendarioDeActividadesToolStripMenuItem_Click);
             // 
             // historialDeActividadesRealizadasToolStripMenuItem
             // 
             this.historialDeActividadesRealizadasToolStripMenuItem.Name = "historialDeActividadesRealizadasToolStripMenuItem";
             this.historialDeActividadesRealizadasToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.historialDeActividadesRealizadasToolStripMenuItem.Text = "Historial de Actividades Realizadas";
+            this.historialDeActividadesRealizadasToolStripMenuItem.Click += new System.EventHandler(this.historialDeActividadesRealizadasToolStripMenuItem_Click);
             // 
             // adoptantesToolStripMenuItem
             // 
@@ -378,18 +380,21 @@
             this.donacionesPorSocioToolStripMenuItem.Name = "donacionesPorSocioToolStripMenuItem";
             this.donacionesPorSocioToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.donacionesPorSocioToolStripMenuItem.Text = "Donaciones por socio";
+            this.donacionesPorSocioToolStripMenuItem.Click += new System.EventHandler(this.donacionesPorSocioToolStripMenuItem_Click);
             // 
             // mostrarTodasLasDonacionesToolStripMenuItem
             // 
             this.mostrarTodasLasDonacionesToolStripMenuItem.Name = "mostrarTodasLasDonacionesToolStripMenuItem";
             this.mostrarTodasLasDonacionesToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mostrarTodasLasDonacionesToolStripMenuItem.Text = "Mostrar todas las Donaciones";
+            this.mostrarTodasLasDonacionesToolStripMenuItem.Click += new System.EventHandler(this.mostrarTodasLasDonacionesToolStripMenuItem_Click);
             // 
             // ingresarDonacionesToolStripMenuItem
             // 
             this.ingresarDonacionesToolStripMenuItem.Name = "ingresarDonacionesToolStripMenuItem";
             this.ingresarDonacionesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.ingresarDonacionesToolStripMenuItem.Text = "Ingresar Donaciones";
+            this.ingresarDonacionesToolStripMenuItem.Click += new System.EventHandler(this.ingresarDonacionesToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
@@ -456,6 +461,7 @@
             this.eliminarAdoptanteToolStripMenuItem.Name = "eliminarAdoptanteToolStripMenuItem";
             this.eliminarAdoptanteToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.eliminarAdoptanteToolStripMenuItem.Text = "Eliminar Adoptante";
+            this.eliminarAdoptanteToolStripMenuItem.Click += new System.EventHandler(this.eliminarAdoptanteToolStripMenuItem_Click);
             // 
             // InterfazPrincipal
             // 

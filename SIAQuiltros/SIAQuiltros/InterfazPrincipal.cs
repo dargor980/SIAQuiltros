@@ -182,5 +182,41 @@ namespace SIAQuiltros
             Form consultarAdoptante = new consultar_adoptante();
             consultarAdoptante.Show();
         }
+
+        private void donacionesPorSocioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form donacionSocio = new Donaciones_de_socio();
+            donacionSocio.Show();
+        }
+
+        private void mostrarTodasLasDonacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form listDonaciones = new Mostrar_Lista_de_Donaciones();
+            listDonaciones.Show();
+        }
+
+        private void ingresarDonacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form IngresarDonacion = new Ingresar_Donaciones();
+            IngresarDonacion.Show();
+        }
+
+        private void calendarioDeActividadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form calendarioActividades = new Calendario_de_actividades();
+            calendarioActividades.Show();
+        }
+
+        private void historialDeActividadesRealizadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ACtividadesRealizadas = new HistorialActividadesRealizadas();
+            ACtividadesRealizadas.Show();
+        }
+
+        private void eliminarAdoptanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form deleteAdoptante = new Eliminar_Adoptante();
+            deleteAdoptante.Show();
+        }
     }
 }

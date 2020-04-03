@@ -106,6 +106,12 @@
     <Compile Include="Asignar hogar a mascota.Designer.cs">
       <DependentUpon>Asignar hogar a mascota.cs</DependentUpon>
     </Compile>
+    <Compile Include="Calendario de actividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario de actividades.Designer.cs">
+      <DependentUpon>Calendario de actividades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Confirmacion eliminar hogar temporal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,18 @@
     <Compile Include="Detalles consulta socio.Designer.cs">
       <DependentUpon>Detalles consulta socio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Donaciones de socio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donaciones de socio.Designer.cs">
+      <DependentUpon>Donaciones de socio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar Adoptante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar Adoptante.Designer.cs">
+      <DependentUpon>Eliminar Adoptante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Eliminar Hogar Temporal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,11 +220,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistorialActividadesRealizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialActividadesRealizadas.Designer.cs">
+      <DependentUpon>HistorialActividadesRealizadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ingresar Adoptante.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ingresar Adoptante.Designer.cs">
       <DependentUpon>Ingresar Adoptante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar Donaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar Donaciones.Designer.cs">
+      <DependentUpon>Ingresar Donaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Ingresar Mascota.cs">
       <SubType>Form</SubType>
@@ -254,6 +284,12 @@
     </Compile>
     <Compile Include="Actualizar datos de Socio.Designer.cs">
       <DependentUpon>Actualizar datos de Socio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar Lista de Donaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar Lista de Donaciones.Designer.cs">
+      <DependentUpon>Mostrar Lista de Donaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Mostrar Lista de Mascotas.cs">
       <SubType>Form</SubType>
@@ -364,6 +400,12 @@
     <EmbeddedResource Include="Detalles consulta socio.resx">
       <DependentUpon>Detalles consulta socio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Donaciones de socio.resx">
+      <DependentUpon>Donaciones de socio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar Adoptante.resx">
+      <DependentUpon>Eliminar Adoptante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Eliminar Hogar Temporal.resx">
       <DependentUpon>Eliminar Hogar Temporal.cs</DependentUpon>
     </EmbeddedResource>
@@ -379,8 +421,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HistorialActividadesRealizadas.resx">
+      <DependentUpon>HistorialActividadesRealizadas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ingresar Adoptante.resx">
       <DependentUpon>Ingresar Adoptante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar Donaciones.resx">
+      <DependentUpon>Ingresar Donaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ingresar Mascota.resx">
       <DependentUpon>Ingresar Mascota.cs</DependentUpon>
@@ -402,6 +450,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Actualizar datos de Socio.resx">
       <DependentUpon>Actualizar datos de Socio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar Lista de Donaciones.resx">
+      <DependentUpon>Mostrar Lista de Donaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mostrar Lista de Mascotas.resx">
       <DependentUpon>Mostrar Lista de Mascotas.cs</DependentUpon>
