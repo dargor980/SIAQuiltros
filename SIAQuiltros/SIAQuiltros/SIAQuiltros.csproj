@@ -184,6 +184,11 @@
     <Compile Include="Donaciones de socio.Designer.cs">
       <DependentUpon>Donaciones de socio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Donaciones.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Donaciones.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Eliminar Adoptante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +230,12 @@
     </Compile>
     <Compile Include="HistorialActividadesRealizadas.Designer.cs">
       <DependentUpon>HistorialActividadesRealizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informe donaciones .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informe donaciones .Designer.cs">
+      <DependentUpon>Informe donaciones .cs</DependentUpon>
     </Compile>
     <Compile Include="Ingresar Adoptante.cs">
       <SubType>Form</SubType>
@@ -491,6 +502,17 @@
     <EmbeddedResource Include="VentanaActualizarSocio.resx">
       <DependentUpon>VentanaActualizarSocio.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Donaciones.xsc">
+      <DependentUpon>Donaciones.xsd</DependentUpon>
+    </None>
+    <None Include="Donaciones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Donaciones.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Donaciones.xss">
+      <DependentUpon>Donaciones.xsd</DependentUpon>
+    </None>
     <None Include="ListadeMascotas.xsc">
       <DependentUpon>ListadeMascotas.xsd</DependentUpon>
     </None>

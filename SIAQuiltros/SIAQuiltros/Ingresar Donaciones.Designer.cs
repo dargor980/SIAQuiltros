@@ -138,7 +138,7 @@
             this.MinimumSize = new System.Drawing.Size(363, 294);
             this.Name = "Ingresar_Donaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ingresar_Donaciones";
+            this.Text = "Ingresar Donación";
             this.Load += new System.EventHandler(this.Ingresar_Donaciones_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
