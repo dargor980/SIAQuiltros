@@ -36,7 +36,9 @@ namespace SIAQuiltros
 
         private void GenerarReporteDonaciones_Click(object sender, EventArgs e)
         {
-
+            Form informe_donaciones = new Informe_donaciones();
+            informe_donaciones.Show();
+            this.Close();
         }
     }
 }

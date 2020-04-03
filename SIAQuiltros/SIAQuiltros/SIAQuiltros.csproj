@@ -435,6 +435,9 @@
     <EmbeddedResource Include="HistorialActividadesRealizadas.resx">
       <DependentUpon>HistorialActividadesRealizadas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Informe donaciones .resx">
+      <DependentUpon>Informe donaciones .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ingresar Adoptante.resx">
       <DependentUpon>Ingresar Adoptante.cs</DependentUpon>
     </EmbeddedResource>
@@ -487,6 +490,7 @@
     <EmbeddedResource Include="Reporte PDF.resx">
       <DependentUpon>Reporte PDF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteDonaciones.rdlc" />
     <EmbeddedResource Include="ResultadoConsultaAdoptante.resx">
       <DependentUpon>ResultadoConsultaAdoptante.cs</DependentUpon>
     </EmbeddedResource>
