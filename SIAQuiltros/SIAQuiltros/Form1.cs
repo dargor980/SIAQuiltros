@@ -11,6 +11,8 @@ using System.Threading;
 
 using System.Data.SqlClient;
 
+
+
 namespace SIAQuiltros
 {
     public partial class Form1 : Form
@@ -29,7 +31,7 @@ namespace SIAQuiltros
         {
             button1.Text = "Iniciando Sesión";
             button1.Enabled = false;
-            SqlConnection conexion = new SqlConnection("server=AMADEUS ; database=QUILTROS ; integrated security=True");
+            SqlConnection conexion = new SqlConnection("server=kriss ; database=QUILTROS ; integrated security=True");
             conexion.Open();
             string user = textBox1.Text;
             string password = textBox2.Text;

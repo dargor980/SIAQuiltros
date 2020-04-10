@@ -150,7 +150,7 @@ namespace SIAQuiltros
                 }
             }
         }
-
+        
         private void consultar_adoptante_Load(object sender, EventArgs e)
         {
             Rut.Enabled = false;

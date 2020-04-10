@@ -62,10 +62,13 @@ CREATE TABLE MASCOTA(
 	nombre VARCHAR(100),
 	edad INT,
 	especie VARCHAR(100),
+	sexo VARCHAR(100),
+	raza VARCHAR (100),
 	tamaño VARCHAR(100),
 	color VARCHAR(100),
-	descripcion VARCHAR(100),
+	descripcion VARCHAR(MAX),
 	estado VARCHAR(100),
+	imagen varbinary(MAX),
 	FOREIGN KEY (cod_actividad) REFERENCES ACTIVIDAD(cod_actividad),
 	FOREIGN KEY (cod_adoptante) REFERENCES ADOPTANTE(rut)
 	);
